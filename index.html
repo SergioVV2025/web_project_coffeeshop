@@ -25,30 +25,30 @@
   <body>
     <div class="page">
       <header class="header">
-        <nav class="nav">
-          <img
-            src="./images/logo_coffeeshop_dark.svg"
-            alt="Logotipo de la cafetería"
-            class="nav__logo"
-          />
-          <ul class="nav__links">
-            <li>
-              <a href="#recipes" class="nav__link">Recetas</a>
-            </li>
-            <li>
-              <a href="#" class="nav__link">Reservar una mesa</a>
-            </li>
-            <li>
-              <a href="#" class="nav__link">Contactos</a>
-            </li>
-          </ul>
-        </nav>
+        <img
+          src="./images/logo_coffeeshop_dark.svg"
+          alt="Logotipo de la cafetería"
+          class="nav__logo"
+        />
         <div class="header__content">
-          <h2 class="header__title">
+          <nav class="nav">
+            <ul class="nav__links">
+              <li>
+                <a href="#recipes" class="nav__link">Recetas</a>
+              </li>
+              <li>
+                <a href="#reservation" class="nav__link">Reservar una mesa</a>
+              </li>
+              <li>
+                <a href="#" class="nav__link">Contactos</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="header__title">
             <span class="header__span-accent">Café de especialidad</span>
             <br />
             en Triple Peaks
-          </h2>
+          </h1>
           <p class="header__description">
             ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
             para darte energía y motivar tu creatividad.
@@ -60,14 +60,20 @@
           class="header__image"
         />
         <div class="header__footer">
-          <p class="header__paragraph">
-            Horario: <br />
-            Lunes a Viernes (de 10:00h a 19:00h) <br />
-            Sábados y Domingos (de 11:00h a 18:)
-          </p>
-          <p class="header__paragraph">
-            Avenida del Éxito 200, Ciudad Triple Peaks
-          </p>
+          <div>
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sábados y Domingos (de 11:00h a 18:)
+            </p>
+          </div>
+          <div>
+            <p class="header__paragraph">
+              Avenida del Éxito 200, Ciudad Triple Peaks
+            </p>
+          </div>
         </div>
       </header>
       <main class="content">
@@ -78,7 +84,7 @@
             tus propios snacks.
           </p>
           <div class="recipes__videos">
-            <div>
+            <div class="recipes_video-item">
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=p3yibbHj6mImj_T8"
@@ -92,9 +98,9 @@
                 <p>~5 min</p>
               </div>
             </div>
-            <div>
+            <div class="recipes_video-item">
               <iframe
-                class="recipes__video-item"
+                class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=1Os0SWzaAbKzwYiq"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -108,7 +114,7 @@
             </div>
           </div>
         </section>
-        <section class="reservation"></section>
+        <section id="reservation" class="reservation"></section>
       </main>
       <footer class="footer"></footer>
     </div>
