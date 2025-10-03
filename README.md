@@ -29,6 +29,4 @@ Mensajes de validación personalizados.
 Navegación:
 Destacar la sección activa en el menú.
 
-
-
-
+# URL https://sergiovv2025.github.io/web_project_coffeeshop
